@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-i18n="title_courses">EasyBrain</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><img src="../img/logo.png" alt="EasyBrain" class="brand-logo"><span class="brand-text">EasyBrain</span></a>
+      <div class="header-right">
+        <button class="lang-btn" id="langToggleInner">EN</button>
+        <button class="nav-toggle" aria-label="Открыть меню" id="navToggleInner"><i class="bi bi-list"></i></button>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html" data-i18n="nav_home">Главная</a></li>
+          <li><a href="about.html" data-i18n="nav_about">О репетиторе</a></li>
+          <li><a href="courses.html" data-i18n="nav_courses">Курсы</a></li>
+          <li><a href="reviews.html" data-i18n="nav_reviews">Отзывы</a></li>
+          <li><a href="library.html" data-i18n="nav_library">Библиотека</a></li>
+          <li><a href="chat.html" data-i18n="nav_chat">Чат</a></li>
+          <li><a class="btn-ghost" href="login.html" data-i18n="nav_account">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    
+<h1 data-i18n="courses_title">Курсы и абонементы</h1>
+<p class="lead" data-i18n="courses_lead">Выберите формат: индивидуально или в группе.</p>
+<div class="grid grid-3">
+  <div class="course-card">
+    <img src="../img/course1.jpg" alt="" class="course-img">
+    <h3>Индивидуальная подготовка к ЕГЭ</h3>
+    <p class="course-meta">40 ак.ч</p>
+    <div class="price">от 2000₽ / час</div>
+    <div class="course-actions"><button class="btn btn-primary open-signup" data-course="Индивидуальная подготовка к ЕГЭ">Записаться</button></div>
+  </div>
+  <div class="course-card">
+    <img src="../img/course2.jpg" alt="" class="course-img">
+    <h3>Группа: Физика — базовый</h3>
+    <p class="course-meta">1 раз в неделю</p>
+    <div class="price">от 4000₽ / мес</div>
+    <div class="course-actions"><button class="btn btn-primary open-signup" data-course="Группа: Физика">Записаться</button></div>
+  </div>
+  <div class="course-card">
+    <img src="../img/course3.jpg" alt="" class="course-img">
+    <h3>Интенсив: Алгебра</h3>
+    <p class="course-meta">2 недели</p>
+    <div class="price">12000₽</div>
+    <div class="course-actions"><button class="btn btn-primary open-signup" data-course="Интенсив: Алгебра">Записаться</button></div>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-block">
+        <img src="../img/logo.png" alt="" class="brand-logo-small">
+        <div>
+          <strong>EasyBrain</strong>
+          <div class="muted" data-i18n="footer_tagline">Твоя задача — понять. Моя — объяснить.</div>
+        </div>
+      </div>
+      <div class="contacts">teacher@easybrain.ru</div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> EasyBrain</div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

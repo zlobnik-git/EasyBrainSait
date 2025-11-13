@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-i18n="title_home">EasyBrain — Главная</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="EasyBrain logo" class="brand-logo">
+        <span class="brand-text">EasyBrain</span>
+      </a>
+
+      <div class="header-right">
+        <button class="lang-btn" id="langToggle" aria-label="Toggle language">EN</button>
+        <button class="nav-toggle" aria-label="Открыть меню" id="navToggle"><i class="bi bi-list"></i></button>
+      </div>
+
+      <nav class="nav" id="siteNav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
+          <li><a href="pages/about.html" data-i18n="nav_about">О репетиторе</a></li>
+          <li><a href="pages/courses.html" data-i18n="nav_courses">Курсы</a></li>
+          <li><a href="pages/reviews.html" data-i18n="nav_reviews">Отзывы</a></li>
+          <li><a href="pages/library.html" data-i18n="nav_library">Библиотека</a></li>
+          <li><a class="btn-ghost" href="pages/login.html" data-i18n="nav_account">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 data-i18n="hero_title">Твоя задача — понять. Моя — объяснить.</h1>
+          <p class="lead" data-i18n="hero_lead">Персональные занятия по математике и физике, подготовка к ЕГЭ и олимпиадам.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#signup" data-i18n="cta_signup">Записаться</a>
+            <a class="btn btn-outline" href="pages/courses.html" data-i18n="cta_courses">Посмотреть курсы</a>
+          </div>
+          <ul class="features-list">
+            <li data-i18n="feat_experience">Опытный преподаватель — 10+ лет</li>
+            <li data-i18n="feat_practice">Гибкий график и адекватные цены</li>
+            <li data-i18n="feat_plan">Индивидуальные планы и отчётность</li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <div class="card teacher-card">
+            <img src="img/teacher.jpg" alt="Преподаватель" class="teacher-img">
+            <div class="teacher-caption" data-i18n="teacher_caption">Преподаватель — 10 лет практики</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="container">
+        <h2 class="section-title" data-i18n="why_choose">Почему выбирают EasyBrain</h2>
+        <div class="grid grid-3">
+          <article class="feature">
+            <div class="feature-icon">✓</div>
+            <h3 data-i18n="f_personal">Персональный план</h3>
+            <p data-i18n="f_personal_text">Каждый ученик получает адаптированную программу.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3 data-i18n="f_practice">Практика 80%</h3>
+            <p data-i18n="f_practice_text">Большой объём практических задач и проверок.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">📊</div>
+            <h3 data-i18n="f_reports">Отчётность для родителей</h3>
+            <p data-i18n="f_reports_text">Регулярные отчёты об успеваемости и рекомендации.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section courses-preview">
+      <div class="container">
+        <h2 class="section-title" data-i18n="popular_courses">Популярные курсы</h2>
+        <div class="grid grid-3">
+          <div class="course-card">
+            <img src="img/course1.jpg" alt="Курс 1" class="course-img">
+            <h3 data-i18n="course1_title">Индивидуальная подготовка к ЕГЭ (Математика)</h3>
+            <p class="course-meta" data-i18n="course1_meta">Индивидуально · 40 ак.ч</p>
+            <div class="course-actions">
+              <a class="btn btn-secondary" href="pages/courses.html#math" data-i18n="more">Подробнее</a>
+              <button class="btn btn-primary open-signup" data-course="Подготовка к ЕГЭ — Математика" data-i18n="signup">Записаться</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="img/course2.jpg" alt="Курс 2" class="course-img">
+            <h3 data-i18n="course2_title">Онлайн-группа: физика — базовый уровень</h3>
+            <p class="course-meta" data-i18n="course2_meta">Группа · 1 раз в неделю</p>
+            <div class="course-actions">
+              <a class="btn btn-secondary" href="pages/courses.html#physics" data-i18n="more">Подробнее</a>
+              <button class="btn btn-primary open-signup" data-course="Группа — Физика (базовый)" data-i18n="signup">Записаться</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="img/course3.jpg" alt="Курс 3" class="course-img">
+            <h3 data-i18n="course3_title">Интенсив по алгебре — 2 недели</h3>
+            <p class="course-meta" data-i18n="course3_meta">Интенсив · 16 ак.ч</p>
+            <div class="course-actions">
+              <a class="btn btn-secondary" href="pages/courses.html#algebra" data-i18n="more">Подробнее</a>
+              <button class="btn btn-primary open-signup" data-course="Интенсив — Алгебра" data-i18n="signup">Записаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title" data-i18n="testimonials">Отзывы учеников</h2>
+        <div class="slider" id="testSlider">
+          <div class="slide active">
+            <img src="img/testimonial1.jpg" alt="Ученик 1" class="test-img">
+            <blockquote data-i18n="test1">«Начал понимать математику за 2 месяца. Результат — +25 баллов к пробному ЕГЭ»</blockquote>
+            <cite>— Мария, 11 класс</cite>
+          </div>
+          <div class="slide">
+            <img src="img/testimonial2.jpg" alt="Ученик 2" class="test-img">
+            <blockquote data-i18n="test2">«Уроки интересные, всё объясняется просто и понятно»</blockquote>
+            <cite>— Дмитрий, 9 класс</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section form-section" id="signup">
+      <div class="container">
+        <h2 class="section-title" data-i18n="signup_title">Записаться на курс</h2>
+        <p class="lead" data-i18n="signup_sub">Оставьте заявку — мы свяжемся в течение 24 часов</p>
+
+        <form id="contactForm" class="card form-card">
+          <input type="hidden" name="course" id="courseInput" value="">
+          <div class="form-row">
+            <label data-i18n="service_label">Услуга
+              <select name="service" required>
+                <option value="" disabled selected data-i18n="select_service">-- Выберите услугу --</option>
+                <option value="individual" data-i18n="opt_individual">Индивидуальные занятия</option>
+                <option value="group" data-i18n="opt_group">Групповые занятия</option>
+                <option value="exam" data-i18n="opt_exam">Подготовка к экзаменам</option>
+                <option value="consultation" data-i18n="opt_consult">Консультация</option>
+              </select>
+            </label>
+
+            <label data-i18n="name_label">Как к вам обращаться?
+              <input type="text" name="name" placeholder="Введите ваше имя" required>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label data-i18n="phone_label">Ваш телефон?
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </label>
+
+            <label data-i18n="note_label">Комментарий (необязательно)
+              <input type="text" name="note" placeholder="Коротко о нуждах">
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" data-i18n="send">Отправить заявку</button>
+            <button type="reset" class="btn btn-outline" data-i18n="reset">Очистить</button>
+          </div>
+
+          <p class="form-agreement" data-i18n="agreement">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-block">
+        <img src="img/logo.png" alt="" class="brand-logo-small">
+        <div>
+          <strong>EasyBrain</strong>
+          <div class="muted" data-i18n="footer_tagline">Твоя задача — понять. Моя — объяснить.</div>
+        </div>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="pages/courses.html" data-i18n="nav_courses">Курсы</a>
+        <a href="pages/about.html" data-i18n="nav_about">О репетиторе</a>
+        <a href="pages/reviews.html" data-i18n="nav_reviews">Отзывы</a>
+        <a href="pages/login.html" data-i18n="nav_account">Личный кабинет</a>
+      </nav>
+
+      <div class="contacts"> 
+        <div>Телеграмм @andrewrep</div>
+        <div>+7 (985) 087-05-92</div>
+        <div>Москва</div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © <span id="year"></span> EasyBrain — Все права защищены.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
